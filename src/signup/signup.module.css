@@ -1,0 +1,56 @@
+.signup {
+ font-family: 'Handlee', sans-serif;
+ color: white;
+ font-size: 1.5em;
+ height: 100vh;
+ background-color:#1a1a29e6;
+}
+
+.nav {
+ max-width: 200px;
+ background: linear-gradient(
+  75deg,
+  #27baba 0%,
+  red 100%
+ );
+ margin: 0 auto;
+}
+
+.signup a {
+ color: white;
+ text-shadow: 2px 2px 5px black;
+ text-decoration: none;
+}
+
+.signup a:hover {
+ color: #27baba;
+}
+
+.form {
+ width: 500px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ align-items: center;
+ margin: 0 auto;
+}
+
+.form input {
+ border: 0;
+ outline: 0;
+ padding: 5px;
+ margin: 20px 0;
+ width: 100%;
+ font-size: 1.5em;
+ font-family: 'Handlee', sans-serif;
+ font-weight: bolder;
+}
+
+.submit {
+ background: linear-gradient(
+  -75deg,
+  #27baba 0%,
+  red 100%
+ );
+ text-shadow: 2px 2px 5px black;
+}
