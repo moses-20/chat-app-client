@@ -7,11 +7,16 @@
 .leftTop {
  background: #212133;
  flex-grow: 0.5;
+ color: white;
+ padding-top: 10px;
 }
 
 .leftMiddle {
  background: #4C4C75;
  flex-grow: 8;
+ font-size: 1.2em;
+ font-weight: bolder;
+ color: white;
 }
 
 .leftBottom {

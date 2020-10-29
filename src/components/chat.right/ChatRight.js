@@ -1,13 +1,31 @@
-import React from 'react'
+// functional import
+import React, {useState, useEffect, useRef } from 'react'
+import io from 'socket.io-client'
+
+// compositional import
 import { motion } from 'framer-motion'
 import styles from './chatRight.module.css'
 
 function ChatRight() {
+  const socketRef = useRef()
+
+  const [userId, setUserId] = useState()
+  // const [messages, setMessages] = useState([])
+  // const [message, setMessage] = useState('')
+
+  useEffect(() => {
+   socketRef.current = io.connect('http://localhost:5000')
+   socketRef.current.on('your id', id => {
+    setUserId(id)
+   })
+
+  }, [])
+
+  console.log(userId)
+
  return (
   <motion.div className={styles.right}>
-   <div className={styles.rightTop}> chat topic </div>
-   <div className={styles.rightMiddle}> room </div>
-   <div className={styles.rightBottom}> input </div>
+   
   </motion.div>
  );
 }

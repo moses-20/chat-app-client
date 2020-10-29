@@ -5,9 +5,9 @@ import styles from './chatLeft.module.css'
 function ChatLeft() {
  return (
   <motion.div className={styles.left}>
-   <div className={styles.leftTop}> Chat Title </div>
-   <div className={styles.leftMiddle}> chats </div>
-   <div className={styles.leftBottom}> extra </div>
+   <div className={styles.leftTop}> <h2> MEST-Hall </h2> </div>
+   <div className={styles.leftMiddle}> Active Chats </div>
+   <div className={styles.leftBottom}> extra... </div>
   </motion.div>
  );
 }
